@@ -6,15 +6,15 @@ import { motion } from "framer-motion";
 import { useLocale } from "@/context/LocaleContext";
 
 const images = [
-    { src: "https://images.unsplash.com/photo-1544333346-64749d056322?auto=format&fit=crop&q=80&w=400", span: "row-span-2" },
-    { src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=400", span: "" },
-    { src: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=400", span: "row-span-2" },
-    { src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=400", span: "" },
-    { src: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=400", span: "col-span-2" },
-    { src: "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?auto=format&fit=crop&q=80&w=400", span: "" },
-    { src: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&q=80&w=400", span: "" },
-    { src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=400", span: "row-span-2" },
-    { src: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=400", span: "" }
+    { src: "/images/illustrations/stall_business.jpg", span: "row-span-2" },
+    { src: "/images/illustrations/online_ecom.jpg", span: "" },
+    { src: "/images/gallery_3.png", span: "row-span-2" },
+    { src: "/images/illustrations/community_impact.png", span: "" },
+    { src: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800", span: "col-span-2" },
+    { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=400", span: "" },
+    { src: "/images/gallery_6.png", span: "" },
+    { src: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&q=80&w=400", span: "row-span-2" },
+    { src: "/images/gallery_8.png", span: "" }
 ];
 
 export default function GalleryPage() {
@@ -58,19 +58,13 @@ export default function GalleryPage() {
                                     transition={{ delay: i * 0.05 }}
                                     viewport={{ once: true }}
                                     whileHover={{ y: -10, rotate: i % 2 === 0 ? 1 : -1 }}
-                                    className={`relative group rounded-[50px] overflow-hidden shadow-xl hover:shadow-2xl transition-all border-4 border-white ${img.span}`}
+                                    className={`relative group rounded-[50px] overflow-hidden shadow-xl hover:shadow-2xl transition-all border-4 border-white hover:border-brand-gold ${img.span}`}
                                 >
-                                    <div className="absolute inset-0 bg-brand-magenta/20 opacity-0 group-hover:opacity-100 transition-opacity z-10" />
                                     <img
                                         src={img.src}
                                         alt={`Foundation Gallery ${i}`}
                                         className="w-full h-full min-h-[300px] object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
-                                    <div className="absolute bottom-8 left-8 right-8 z-20 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                        <div className="bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl">
-                                            <p className="font-black text-brand-magenta text-lg tracking-tight uppercase">Moment of Impact</p>
-                                        </div>
-                                    </div>
                                 </motion.div>
                             ))}
                         </div>

@@ -32,7 +32,7 @@ export const translations = {
             description: "We are dedicated to creating a strong ecosystem where women can start, grow, and scale their businesses.",
             support: {
                 title: "Support",
-                desc: "We provide stalls and platforms for women to showcase their products and reach customers.",
+                desc: "We provide platforms and opportunities for women to showcase their products and reach customers.",
             },
             uplift: {
                 title: "Uplift",
@@ -59,7 +59,7 @@ export const translations = {
             titleItalic: "Journey",
             titleEnd: "?",
             description: "Whether you're an entrepreneur looking for growth, a customer wanting to support women-led businesses, or a volunteer, there's a place for you.",
-            ctaPrimary: "Apply for a Stall",
+            ctaPrimary: "Join Our Community",
             ctaSecondary: "Support Us",
         },
         footer: {
@@ -98,7 +98,7 @@ export const translations = {
             shopifyDesc: "We specialize in helping women entrepreneurs transition from physical stalls to digital stores. Our Shopify experts provide hands-on training to help you set up, design, and manage your online business.",
             shopifyBadge: "DIGITAL FIRST ECONOMY",
             shopifyCTA: "Start Digital Training",
-            p1Title: "Exhibitions & Stalls",
+            p1Title: "Exhibitions & Events",
             p1Desc: "We organize regular exhibitions where women entrepreneurs showcase and sell their products from clothing to handicrafts.",
             p2Title: "Mentorship & Guidance",
             p2Desc: "Receive personalized coaching on business management, product pricing, and promotional strategies for your small business.",
@@ -114,7 +114,7 @@ export const translations = {
         },
         contactPage: {
             heroTitle: "Get in Touch",
-            heroDesc: "Have questions about our programs or want to register for a stall? We're here to help you every step of the way.",
+            heroDesc: "Have questions about our programs or want to join our network? We're here to help you every step of the way.",
             detailsTitle: "Contact Details",
             addressTitle: "Visit Us",
             addressDesc: "E/4 Bhagyalaxmi soc , Ram nagar , Bandrekarwadi Jogeshwari ( East ) , Mumbai - 400060 , Maharashtra",
@@ -128,7 +128,7 @@ export const translations = {
             messageLabel: "Your Message",
             sendBtn: "Send Message",
             subjects: [
-                "Registration for a Stall",
+                "Join as Entrepreneur",
                 "Business Mentorship Inquiry",
                 "Partnership Proposal",
                 "General Support"
@@ -168,7 +168,7 @@ export const translations = {
             description: "हम एक मजबूत पारिस्थितिकी तंत्र बनाने के लिए समर्पित हैं जहाँ महिलाएँ अपने व्यवसाय शुरू कर सकें, बढ़ सकें और बड़े स्तर पर ले जा सकें।",
             support: {
                 title: "समर्थन",
-                desc: "हम महिलाओं को अपने उत्पादों को प्रदर्शित करने और ग्राहकों तक पहुंचने के लिए स्टाल और मंच प्रदान करते हैं।",
+                desc: "हम महिलाओं को अपने उत्पादों को प्रदर्शित करने और ग्राहकों तक पहुंचने के लिए मंच और अवसर प्रदान करते हैं।",
             },
             uplift: {
                 title: "उत्थान",
@@ -195,7 +195,7 @@ export const translations = {
             titleItalic: "यात्रा",
             titleEnd: "शुरू करने के लिए तैयार हैं?",
             description: "चाहे आप विकास की तलाश में उद्यमी हों, महिला नेतृत्व वाले व्यवसायों का समर्थन करने वाले ग्राहक हों, या स्वयंसेवक हों, आपके लिए एक जगह है।",
-            ctaPrimary: "स्टाल के लिए आवेदन करें",
+            ctaPrimary: "हमारे समुदाय में शामिल हों",
             ctaSecondary: "हमारा समर्थन करें",
         },
         footer: {
@@ -234,7 +234,7 @@ export const translations = {
             shopifyDesc: "हम महिला उद्यमियों को भौतिक स्टालों से डिजिटल स्टोर में संक्रमण करने में मदद करने में विशेषज्ञ हैं। हमारे शॉपिफाई विशेषज्ञ आपको अपना ऑनलाइन व्यवसाय स्थापित करने, डिजाइन करने और प्रबंधित करने में मदद करने के लिए व्यावहारिक प्रशिक्षण प्रदान करते हैं।",
             shopifyBadge: "डिजिटल प्रथम अर्थव्यवस्था",
             shopifyCTA: "डिजिटल प्रशिक्षण शुरू करें",
-            p1Title: "प्रदर्शनी और स्टॉल",
+            p1Title: "प्रदर्शनी और कार्यक्रम",
             p1Desc: "हम नियमित प्रदर्शनियां आयोजित करते हैं जहां महिला उद्यमी कपड़ों से लेकर हस्तशिल्प तक अपने उत्पादों का प्रदर्शन और बिक्री करती हैं।",
             p2Title: "परामर्श और मार्गदर्शन",
             p2Desc: "अपने छोटे व्यवसाय के लिए व्यवसाय प्रबंधन, उत्पाद मूल्य निर्धारण और प्रचार रणनीतियों पर व्यक्तिगत कोचिंग प्राप्त करें।",
@@ -250,7 +250,7 @@ export const translations = {
         },
         contactPage: {
             heroTitle: "संपर्क करें",
-            heroDesc: "हमारे कार्यक्रमों के बारे में प्रश्न हैं या स्टाल के लिए पंजीकरण करना चाहते हैं? हम हर कदम पर आपकी मदद करने के लिए यहां हैं।",
+            heroDesc: "हमारे कार्यक्रमों के बारे में प्रश्न हैं या हमारे नेटवर्क में शामिल होना चाहते हैं? हम हर कदम पर आपकी मदद करने के लिए यहां हैं।",
             detailsTitle: "संपर्क विवरण",
             addressTitle: "हमसे मिलें",
             addressDesc: "ई/4 भाग्यलक्ष्मी सोसा, राम नगर, बंद्रेकरवाड़ी जोगेश्वरी (पूर्व), मुंबई - 400060, महाराष्ट्र",
@@ -264,7 +264,7 @@ export const translations = {
             messageLabel: "आपका संदेश",
             sendBtn: "संदेश भेजें",
             subjects: [
-                "स्टाल के लिए पंजीकरण",
+                "उद्यमी के रूप में पंजीकरण",
                 "व्यावसायिक परामर्श पूछताछ",
                 "साझेदारी प्रस्ताव",
                 "सामान्य सहायता"
@@ -304,7 +304,7 @@ export const translations = {
             description: "महिला आपला व्यवसाय सुरू करू शकतील, वाढवू शकतील आणि मोठ्या स्तरावर नेऊ शकतील अशी एक मजबूत परिसंस्था तयार करण्यासाठी आम्ही समर्पित आहोत.",
             support: {
                 title: "समर्थन",
-                desc: "आम्ही महिलांना त्यांची उत्पादने प्रदर्शित करण्यासाठी आणि ग्राहकांपर्यंत पोहोचण्यासाठी स्टॉल्स आणि मंच उपलब्ध करून देतो.",
+                desc: "आम्ही महिलांना त्यांची उत्पादने प्रदर्शित करण्यासाठी आणि ग्राहकांपर्यंत पोहोचण्यासाठी मंच आणि संधी उपलब्ध करून देतो.",
             },
             uplift: {
                 title: "उत्थान",
@@ -331,7 +331,7 @@ export const translations = {
             titleItalic: "प्रवास",
             titleEnd: "सुरू करण्यास तयार आहात का?",
             description: "तुम्ही प्रगती शोधत असलेल्या उद्योजिका असाल, महिला उद्योजकांना पाठिंबा देणारे ग्राहक असाल किंवा स्वयंसेवक असाल, तुमच्यासाठी येथे स्थान आहे.",
-            ctaPrimary: "स्टॉलसाठी अर्ज करा",
+            ctaPrimary: "आमच्या समुदायात सामील व्हा",
             ctaSecondary: "आम्हाला पाठिंबा द्या",
         },
         footer: {
@@ -370,7 +370,7 @@ export const translations = {
             shopifyDesc: "आम्ही महिला उद्योजिकांना प्रत्यक्ष स्टॉल्सवरून डिजिटल स्टोअरमध्ये स्थलांतरित होण्यास मदत करण्यात तज्ञ आहोत. आमचे शॉपिफाई तज्ञ आपल्याला ऑनलाइन व्यवसाय सेट अप करण्यासाठी, डिझाइन करण्यासाठी आणि व्यवस्थापित करण्यासाठी प्रत्यक्ष प्रशिक्षण देतात.",
             shopifyBadge: "डिजिटल प्रथम अर्थव्यवस्था",
             shopifyCTA: "डिजिटल प्रशिक्षण सुरू करा",
-            p1Title: "प्रदर्शने आणि स्टॉल्स",
+            p1Title: "प्रदर्शने आणि कार्यक्रम",
             p1Desc: "आम्ही नियमित प्रदर्शने आयोजित करतो जिथे महिला उद्योजिका कपड्यांपासून हस्तकलेपर्यंत त्यांची उत्पादने प्रदर्शित करतात आणि विकतात.",
             p2Title: "मार्गदर्शन आणि सल्ला",
             p2Desc: "आपल्या लघु उद्योगासाठी व्यवसाय व्यवस्थापन, उत्पादन किंमत आणि जाहिरात धोरणांवर वैयक्तिक मार्गदर्शन मिळवा.",
@@ -386,7 +386,7 @@ export const translations = {
         },
         contactPage: {
             heroTitle: "संपर्क साधा",
-            heroDesc: "आमच्या कार्यक्रमांबद्दल प्रश्न आहेत किंवा स्टॉलसाठी नोंदणी करू इच्छिता? आम्ही तुम्हाला प्रत्येक पाऊलावर मदत करण्यासाठी येथे आहोत.",
+            heroDesc: "आमच्या कार्यक्रमांबद्दल प्रश्न आहेत किंवा आमच्या नेटवर्कमध्ये सामील होऊ इच्छिता? आम्ही तुम्हाला प्रत्येक पाऊलावर मदत करण्यासाठी येथे आहोत.",
             detailsTitle: "संपर्क तपशील",
             addressTitle: "आम्हाला भेटा",
             addressDesc: "ई/४ भाग्यलक्ष्मी सोसा, राम नगर, बंद्रेकरवाडी जोगेश्वरी (पूर्व), मुंबई - ४०००६०, महाराष्ट्र",
@@ -400,7 +400,7 @@ export const translations = {
             messageLabel: "तुमचा संदेश",
             sendBtn: "संदेश पाठवा",
             subjects: [
-                "स्टॉलसाठी नोंदणी",
+                "उद्योजिका म्हणून नोंदणी",
                 "व्यवसाय मार्गदर्शन चौकशी",
                 "भागीदारी प्रस्ताव",
                 "सामान्य समर्थन"

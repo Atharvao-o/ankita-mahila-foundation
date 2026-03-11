@@ -70,6 +70,7 @@ export function Navbar() {
                                 src="/logo.png"
                                 alt="Ankita Mahila Foundation Logo"
                                 fill
+                                sizes="48px"
                                 className="object-contain drop-shadow-md"
                                 priority
                             />

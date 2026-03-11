@@ -52,7 +52,7 @@ export default function ProgramsPage() {
                         <motion.h1
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            className="text-5xl md:text-8xl font-black tracking-tight text-foreground leading-[1]"
+                            className="text-5xl md:text-8xl font-black tracking-tight text-foreground leading-tight"
                         >
                             {t.programsPage.heroTitle}
                         </motion.h1>
@@ -70,7 +70,7 @@ export default function ProgramsPage() {
                 {/* Programs Grid */}
                 <section className="py-24 bg-white overflow-hidden">
                     <div className="container mx-auto px-4 md:px-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                             {programs.map((program, i) => (
                                 <motion.div
                                     key={program.title}
@@ -148,8 +148,8 @@ export default function ProgramsPage() {
                             <div className="absolute -inset-6 bg-white/5 rounded-[60px] blur-2xl" />
                             <div className="bg-white/5 p-4 rounded-[60px] border border-white/10 backdrop-blur-xl shadow-2xl">
                                 <img
-                                    src="https://images.unsplash.com/photo-1556742049-13437146f494?auto=format&fit=crop&q=80&w=800"
-                                    alt="Digital Literacy"
+                                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800"
+                                    alt="Community Impact"
                                     className="rounded-[50px] shadow-2xl w-full h-[500px] object-cover"
                                 />
                             </div>

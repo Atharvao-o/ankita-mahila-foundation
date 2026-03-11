@@ -67,8 +67,8 @@ export default function AboutPage() {
                                 <div className="absolute -inset-4 bg-brand-gold/10 rounded-[60px] rotate-3 -z-10" />
                                 <div className="rounded-[60px] overflow-hidden shadow-2xl border-8 border-white group">
                                     <img
-                                        src="https://images.unsplash.com/photo-1544333346-64749d056322?auto=format&fit=crop&q=80&w=800"
-                                        alt="Foundation Story"
+                                        src="/images/illustrations/indian_artisans.png"
+                                        alt="Indian Handcrafted Jewelry"
                                         className="w-full h-[600px] object-cover group-hover:scale-105 transition-transform duration-1000"
                                     />
                                 </div>

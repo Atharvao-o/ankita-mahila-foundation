@@ -25,6 +25,7 @@ export function Footer() {
                                     src="/logo.png"
                                     alt="Ankita Mahila Foundation Logo"
                                     fill
+                                    sizes="48px"
                                     className="object-contain brightness-0 invert"
                                 />
                             </motion.div>

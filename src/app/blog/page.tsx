@@ -16,14 +16,14 @@ const articles = [
         description: "A beginner's guide for women entrepreneurs looking to take their business into the digital world.",
         category: "Digital Learning",
         date: "February 28, 2026",
-        image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=400"
+        image: "/images/illustrations/online_ecom.jpg"
     },
     {
         title: "The Power of Storytelling in Branding",
         description: "Why your personal journey as a woman entrepreneur is your most powerful marketing tool.",
         category: "Branding",
         date: "February 15, 2026",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=400"
+        image: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&q=80&w=400"
     }
 ];
 

@@ -105,8 +105,8 @@ export function Hero() {
                 >
                     <div className="absolute inset-0 bg-gradient-to-tr from-brand-magenta/40 via-transparent to-brand-gold/20 z-10 group-hover:opacity-0 transition-opacity duration-1000" />
                     <img
-                        src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1400"
-                        alt="Women Entrepreneurs"
+                        src="/images/home_hero.png"
+                        alt="Indian Women Entrepreneurs Collective"
                         className="object-cover w-full h-full scale-105 group-hover:scale-110 transition-transform duration-[2s] ease-out"
                     />
                 </motion.div>

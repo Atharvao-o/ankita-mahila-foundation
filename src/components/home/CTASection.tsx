@@ -51,6 +51,43 @@ export function CTASection() {
                         </motion.div>
                     </div>
                 </motion.div>
+
+                {/* New Illustrations Section */}
+                <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="group relative h-[300px] md:h-[400px] rounded-[40px] overflow-hidden shadow-xl"
+                    >
+                        <img 
+                            src="/images/illustrations/stall_business.jpg" 
+                            alt="Woman selling at a stall" 
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                            <p className="text-white text-xl font-bold">Physical Business Support</p>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4 }}
+                        className="group relative h-[300px] md:h-[400px] rounded-[40px] overflow-hidden shadow-xl"
+                    >
+                        <img 
+                            src="/images/illustrations/online_ecom.jpg" 
+                            alt="Woman doing online e-commerce" 
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+                            <p className="text-white text-xl font-bold">Digital Growth & E-commerce</p>
+                        </div>
+                    </motion.div>
+                </div>
             </div>
         </section>
     );

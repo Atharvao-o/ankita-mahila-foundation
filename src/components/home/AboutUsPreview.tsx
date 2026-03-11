@@ -37,29 +37,20 @@ export function AboutUsPreview() {
                                 className="space-y-4 pt-12"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1544333346-64749d056322?auto=format&fit=crop&q=80&w=400"
-                                    alt="Women working"
+                                    src="/images/illustrations/indian_artisans.png"
+                                    alt="Indian women working on handicrafts"
                                     className="rounded-[40px] shadow-2xl border-4 border-white object-cover aspect-[3/4]"
                                 />
                             </motion.div>
                             <div className="space-y-6">
                                 <motion.div whileHover={{ scale: 1.02 }}>
                                     <img
-                                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=400"
-                                        alt="Mentorship"
+                                        src="/images/illustrations/mentorship.png"
+                                        alt="Indian entrepreneur mentorship"
                                         className="rounded-[40px] shadow-2xl border-4 border-white object-cover aspect-[3/4]"
                                     />
                                 </motion.div>
-                                <motion.div
-                                    whileHover={{ y: -10 }}
-                                    className="relative group cursor-default"
-                                >
-                                    <div className="absolute inset-0 bg-brand-magenta rounded-[40px] blur-2xl opacity-20 group-hover:opacity-40 transition-opacity" />
-                                    <div className="relative bg-brand-magenta p-8 rounded-[40px] text-white shadow-2xl flex flex-col justify-center aspect-square border border-white/20 glass-dark">
-                                        <p className="text-6xl font-black mb-2 text-glow">10+</p>
-                                        <p className="text-xs text-white/80 uppercase font-black tracking-[0.3em] leading-tight">{t.aboutPreview.years}</p>
-                                    </div>
-                                </motion.div>
+
                             </div>
                         </div>
                         {/* Decals */}
