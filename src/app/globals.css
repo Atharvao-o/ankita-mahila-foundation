@@ -107,6 +107,18 @@
     text-shadow: 0 0 15px rgba(244, 114, 182, 0.3);
   }
 
+  .hover-gold-gradient {
+    @apply transition-all duration-300;
+  }
+
+  .hover-gold-gradient:hover {
+    background: linear-gradient(135deg, #B45309 0%, #D97706 45%, #FBBF24 100%) !important;
+    background-size: 200% auto !important;
+    background-position: right center !important;
+    color: white !important;
+    border-color: transparent !important;
+  }
+
   .blob-shape {
     @apply absolute rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob;
   }
