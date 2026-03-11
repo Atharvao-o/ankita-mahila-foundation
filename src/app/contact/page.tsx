@@ -65,7 +65,7 @@ export default function ContactPage() {
                                             </div>
                                             <div>
                                                 <h4 className="font-black text-xl mb-1">{t.contactPage.phoneTitle}</h4>
-                                                <p className="text-foreground/70 text-lg font-medium leading-relaxed">+91 98765 43210<br />+91 22 1234 5678</p>
+                                                <p className="text-foreground/70 text-lg font-medium leading-relaxed">+91 98698 73323</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-8 group">
@@ -74,7 +74,7 @@ export default function ContactPage() {
                                             </div>
                                             <div>
                                                 <h4 className="font-black text-xl mb-1">{t.contactPage.emailTitle}</h4>
-                                                <p className="text-foreground/70 text-lg font-medium leading-relaxed">contact@ankitamahila.org<br />support@ankitamahila.org</p>
+                                                <p className="text-foreground/70 text-lg font-medium leading-relaxed">contact@ankitamahilafoundation.com<br />support@ankitamahilafoundation.com</p>
                                             </div>
                                         </div>
                                     </div>

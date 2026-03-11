@@ -66,15 +66,15 @@ export function Footer() {
                         <ul className="space-y-4 text-white/80">
                             <li className="flex items-start space-x-3">
                                 <MapPin className="h-5 w-5 shrink-0 mt-0.5" />
-                                <span>123 Empowerment Way, Textile District, India</span>
+                                <span>E/4 Bhagyalaxmi soc , Ram nagar , Bandrekarwadi Jogeshwari ( East ) , Mumbai - 400060 , Maharashtra</span>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Phone className="h-5 w-5 shrink-0" />
-                                <span>+91 98765 43210</span>
+                                <span>+91 98698 73323</span>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Mail className="h-5 w-5 shrink-0" />
-                                <span>contact@ankitamahila.org</span>
+                                <span>contact@ankitamahilafoundation.com</span>
                             </li>
                         </ul>
                     </div>
