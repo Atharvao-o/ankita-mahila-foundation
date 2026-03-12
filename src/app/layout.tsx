@@ -12,19 +12,19 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ankitamahilafoundation.com"),
   title: {
-    default: "Ankita Mahila Foundation | Empowering Women through Entrepreneurship",
+    default: "Ankita Mahila Foundation | Women Empowerment NGO in India",
     template: "%s | Ankita Mahila Foundation"
   },
-  description: "Ankita Mahila Foundation is a premier women empowerment organization in India focusing on financial independence, entrepreneurship exhibitions, and digital literacy.",
+  description: "Ankita Mahila Foundation is an NGO dedicated to women empowerment, education, skill development, and community support in India.",
   keywords: ["Ankita Mahila Foundation", "Women Empowerment India", "Female Entrepreneurship", "Women Exhibitions", "Social Upliftment", "Digital Literacy for Women"],
   authors: [{ name: "Ankita Mahila Foundation" }],
   creator: "Ankita Mahila Foundation",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.ankitamahilafoundation.com",
-    title: "Ankita Mahila Foundation | Support • Uplift • Empower",
-    description: "Empowering women to achieve financial independence through entrepreneurship and support networks.",
+    url: "https://ankitamahilafoundation.com",
+    title: "Ankita Mahila Foundation",
+    description: "Women Empowerment NGO",
     siteName: "Ankita Mahila Foundation",
   },
   twitter: {
@@ -36,7 +36,14 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
+
+import { ThemeProvider } from "@/components/theme-provider";
+import { DevelopmentBanner } from "@/components/layout/DevelopmentBanner";
 
 export default function RootLayout({
   children,
@@ -44,12 +51,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="mr" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${rubik.variable} font-sans antialiased bg-background text-foreground`}
       >
         <LocaleProvider>
-          {children}
+          <DevelopmentBanner />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
         </LocaleProvider>
       </body>
     </html>

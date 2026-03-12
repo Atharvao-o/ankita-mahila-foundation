@@ -17,9 +17,9 @@ export function AboutUsPreview() {
     ];
 
     return (
-        <section className="relative py-24 bg-[#FDFCF6] font-sans overflow-hidden">
+        <section className="relative py-24 bg-[#FDFCF6] dark:bg-[#1A1A1A] font-sans overflow-hidden">
             {/* Background Decor */}
-            <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 h-[600px] w-[600px] bg-brand-magenta/5 rounded-full blur-[120px] animate-blob" />
+            <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 h-[600px] w-[600px] bg-brand-magenta/5 dark:bg-brand-magenta/10 rounded-full blur-[120px] animate-blob" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-16">

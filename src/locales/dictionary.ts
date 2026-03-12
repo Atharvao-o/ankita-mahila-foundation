@@ -10,15 +10,15 @@ export const translations = {
         },
         hero: {
             tagline: "Support • Uplift • Empower",
-            title: "Empowering Women to Lead and",
-            titleItalic: "Thrive",
+            title: "Ankita Mahila",
+            titleItalic: "Foundation",
             description: "Ankita Mahila Foundation helps women become financially independent by supporting small businesses, entrepreneurship, and digital literacy.",
             ctaPrimary: "Join as Entrepreneur",
             ctaSecondary: "Support Our Mission",
         },
         aboutPreview: {
             badge: "Our Story",
-            title: "Building a Strong Ecosystem for Women",
+            title: "About Ankita Mahila Foundation",
             description: "Ankita Mahila Foundation is more than just an NGO; it's a launchpad for women entrepreneurs. We believe that behind every woman is a business waiting to flourish.",
             point1: "Supporting small businesses and entrepreneurship",
             point2: "Regular exhibitions and event opportunities",
@@ -90,6 +90,17 @@ export const translations = {
             visionDesc: "To create a strong ecosystem where women entrepreneurs can start, grow, and scale their businesses through events, digital platforms, and community support.",
             valuesTitle: "The Values that Guide Us",
             valuesDesc: "Our core values of Support, Uplift, and Empower are woven into every program and interaction.",
+            seoAboutTitle: "About Ankita Mahila Foundation",
+            ngoHistory: "NGO History",
+            womenEmpowermentWork: "Women Empowerment Work",
+            communityWork: "Community Work",
+            ngoMission: "NGO Mission",
+            programsActivities: "Our Programs & Activities",
+            activityWomen: "Women Empowerment Program",
+            activitySkill: "Skill Development Training",
+            activitySupport: "NGO Support Program",
+            dedicatedGrowth: "Dedicated to Women's Growth",
+            empoweringIndia: "Ankita Mahila Foundation is committed to providing community work and programs that uplift women across India.",
         },
         programsPage: {
             heroTitle: "Our Empowerment Programs",
@@ -132,7 +143,8 @@ export const translations = {
                 "Business Mentorship Inquiry",
                 "Partnership Proposal",
                 "General Support"
-            ]
+            ],
+            underDevelopment: "Website Under Development - Coming Soon",
         }
     },
     hi: {
@@ -146,15 +158,15 @@ export const translations = {
         },
         hero: {
             tagline: "समर्थन • उत्थान • सशक्तिकरण",
-            title: "महिलाओं को नेतृत्व और",
-            titleItalic: "उन्नति",
+            title: "अंकिता महिला",
+            titleItalic: "फाउंडेशन",
             description: "अंकिता महिला फाउंडेशन छोटे व्यवसायों, उद्यमिता और डिजिटल साक्षरता का समर्थन करके महिलाओं को आर्थिक रूप से स्वतंत्र बनाने में मदद करता है।",
             ctaPrimary: "उद्यमी के रूप में जुड़ें",
             ctaSecondary: "हमारे मिशन का समर्थन करें",
         },
         aboutPreview: {
             badge: "हमारी कहानी",
-            title: "महिलाओं के लिए एक मजबूत पारिस्थितिकी तंत्र का निर्माण",
+            title: "अंकिता महिला फाउंडेशन के बारे में",
             description: "अंकिता महिला फाउंडेशन सिर्फ एक एनजीओ से कहीं अधिक है; यह महिला उद्यमियों के लिए एक लॉन्चपैड है। हमारा मानना है कि हर महिला के पीछे एक फलता-फूलता व्यवसाय छिपा है।",
             point1: "छोटे व्यवसायों और उद्यमिता का समर्थन करना",
             point2: "नियमित प्रदर्शनियां और अवसर",
@@ -226,6 +238,17 @@ export const translations = {
             visionDesc: "एक मजबूत पारिस्थितिकी तंत्र बनाना जहाँ महिला उद्यमी कार्यक्रमों, डिजिटल प्लेटफार्मों और सामुदायिक समर्थन के माध्यम से अपने व्यवसाय शुरू कर सकें, बढ़ सकें और बड़े स्तर पर ले जा सकें।",
             valuesTitle: "मूल्य जो हमारा मार्गदर्शन करते हैं",
             valuesDesc: "हमारे समर्थन, उत्थान और सशक्तिकरण के मूल मूल्य हर कार्यक्रम और बातचीत में बुने हुए हैं।",
+            seoAboutTitle: "अंकिता महिला फाउंडेशन के बारे में",
+            ngoHistory: "एनजीओ इतिहास",
+            womenEmpowermentWork: "महिला सशक्तिकरण कार्य",
+            communityWork: "सामुदायिक कार्य",
+            ngoMission: "एनजीओ मिशन",
+            programsActivities: "हमारे कार्यक्रम और गतिविधियाँ",
+            activityWomen: "महिला सशक्तिकरण कार्यक्रम",
+            activitySkill: "कौशल विकास प्रशिक्षण",
+            activitySupport: "एनजीओ सहायता कार्यक्रम",
+            dedicatedGrowth: "महिलाओं के विकास के लिए समर्पित",
+            empoweringIndia: "अंकिता महिला फाउंडेशन भारत भर में महिलाओं के उत्थान के लिए सामुदायिक कार्य और कार्यक्रम प्रदान करने के लिए प्रतिबद्ध है।",
         },
         programsPage: {
             heroTitle: "हमारे सशक्तिकरण कार्यक्रम",
@@ -268,7 +291,8 @@ export const translations = {
                 "व्यावसायिक परामर्श पूछताछ",
                 "साझेदारी प्रस्ताव",
                 "सामान्य सहायता"
-            ]
+            ],
+            underDevelopment: "वेबसाइट विकास के अधीन है - जल्द ही आ रही है",
         }
     },
     mr: {
@@ -282,15 +306,15 @@ export const translations = {
         },
         hero: {
             tagline: "समर्थन • उत्थान • सक्षमीकरण",
-            title: "महिलांना नेतृत्व आणि",
-            titleItalic: "प्रगती",
+            title: "अंकिता महिला",
+            titleItalic: "फाउंडेशन",
             description: "अंकिता महिला फाउंडेशन लघु उद्योग, उद्योजकता आणि डिजिटल साक्षरतेला पाठिंबा देऊन महिलांना आर्थिकदृष्ट्या स्वतंत्र होण्यास मदत करते.",
             ctaPrimary: "उद्योजिका म्हणून सामील व्हा",
             ctaSecondary: "आमच्या कार्याला पाठिंबा द्या",
         },
         aboutPreview: {
             badge: "आमची कथा",
-            title: "महिलांसाठी एक मजबूत परिसंस्था निर्माण करणे",
+            title: "अंकिता महिला फाउंडेशन बद्दल",
             description: "अंकिता महिला फाउंडेशन केवळ एक स्वयंसेवी संस्था नाही; महिला उद्योजकांसाठी हे एक व्यासपीठ आहे. आमचा असा विश्वास आहे की प्रत्येक महिलेच्या मागे एक यशस्वी व्यवसाय दडलेला असतो.",
             point1: "लघु उद्योग आणि उद्योजकतेला पाठिंबा",
             point2: "नियमित प्रदर्शने och संधी",
@@ -362,6 +386,17 @@ export const translations = {
             visionDesc: "एक मजबूत परिसंस्था निर्माण करणे जिथे महिला उद्योजिका कार्यक्रम, डिजिटल प्लॅटफॉर्म आणि सामुदायिक पाठिंब्याद्वारे आपला व्यवसाय सुरू करू शकतील, वाढवू शकतील आणि मोठ्या स्तरावर नेऊ शकतील.",
             valuesTitle: "आम्हाला मार्गदर्शन करणारी मूल्ये",
             valuesDesc: "आमची समर्थन, उत्थान आणि सक्षमीकरण ही मूळ मूल्ये प्रत्येक कार्यक्रम आणि संवादात विणलेली आहेत.",
+            seoAboutTitle: "अंकिता महिला फाउंडेशन बद्दल",
+            ngoHistory: "स्वयंसेवी संस्थेचा इतिहास",
+            womenEmpowermentWork: "महिला सक्षमीकरण कार्य",
+            communityWork: "सामुदायिक कार्य",
+            ngoMission: "स्वयंसेवी संस्थेचे ध्येय",
+            programsActivities: "आमचे कार्यक्रम आणि उपक्रम",
+            activityWomen: "महिला सक्षमीकरण कार्यक्रम",
+            activitySkill: "कौशल्य विकास प्रशिक्षण",
+            activitySupport: "स्वयंसेवी संस्था समर्थन कार्यक्रम",
+            dedicatedGrowth: "महिलांच्या सर्वांगीण विकासासाठी समर्पित",
+            empoweringIndia: "अंकिता महिला फाउंडेशन संपूर्ण भारतातील महिलांच्या उत्थानासाठी सामुदायिक कार्य आणि उपक्रम राबवण्यासाठी वचनबद्ध आहे।",
         },
         programsPage: {
             heroTitle: "आमचे सक्षमीकरण कार्यक्रम",
@@ -404,7 +439,8 @@ export const translations = {
                 "व्यवसाय मार्गदर्शन चौकशी",
                 "भागीदारी प्रस्ताव",
                 "सामान्य समर्थन"
-            ]
+            ],
+            underDevelopment: "वेबसाइट विकसित होत आहे - लवकरच येत आहे",
         }
     },
 };

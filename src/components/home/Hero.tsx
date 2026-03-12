@@ -31,9 +31,9 @@ export function Hero() {
     return (
         <section className="relative overflow-hidden bg-[#FDFCF6] py-20 lg:py-32 font-sans">
             {/* Animated Background Blobs */}
-            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 h-[500px] w-[500px] bg-brand-magenta/10 rounded-full blur-[120px] animate-blob" />
-            <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 h-[600px] w-[600px] bg-brand-gold/10 rounded-full blur-[120px] animate-blob [animation-delay:2s]" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] bg-brand-green/5 rounded-full blur-[100px] animate-blob [animation-delay:4s]" />
+            <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 h-[500px] w-[500px] bg-brand-magenta/10 dark:bg-brand-magenta/20 rounded-full blur-[120px] animate-blob" />
+            <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 h-[600px] w-[600px] bg-brand-gold/10 dark:bg-brand-gold/20 rounded-full blur-[120px] animate-blob [animation-delay:2s]" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] bg-brand-green/5 dark:bg-brand-green/10 rounded-full blur-[100px] animate-blob [animation-delay:4s]" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <motion.div

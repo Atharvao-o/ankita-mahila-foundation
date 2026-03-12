@@ -11,17 +11,26 @@ import { useLocale } from "@/context/LocaleContext";
 import { Locale } from "@/locales/dictionary";
 import Image from "next/image";
 
+import { ThemeToggle } from "./ThemeToggle";
+import { useTheme } from "next-themes";
+
 export function Navbar() {
     const [isOpen, setIsOpen] = React.useState(false);
     const [isLangOpen, setIsLangOpen] = React.useState(false);
     const pathname = usePathname();
     const { locale, setLocale, t } = useLocale();
+    const { theme } = useTheme();
     const { scrollY } = useScroll();
+
+    const isDark = theme === "dark";
 
     const navBg = useTransform(
         scrollY,
         [0, 100],
-        ["rgba(253, 252, 246, 0)", "rgba(253, 252, 246, 0.8)"]
+        [
+            "rgba(253, 252, 246, 0)",
+            isDark ? "rgba(26, 26, 26, 0.8)" : "rgba(253, 252, 246, 0.8)"
+        ]
     );
 
     const navBlur = useTransform(
@@ -33,12 +42,15 @@ export function Navbar() {
     const navBorder = useTransform(
         scrollY,
         [0, 100],
-        ["rgba(229, 231, 235, 0)", "rgba(229, 231, 235, 1)"]
+        [
+            "rgba(229, 231, 235, 0)",
+            isDark ? "rgba(64, 64, 64, 0.5)" : "rgba(229, 231, 235, 1)"
+        ]
     );
 
     const navLinks = [
         { name: t.nav.home, href: "/" },
-        { name: t.nav.about, href: "/about" },
+        { name: t.nav.about, href: "/about-ankita-mahila-foundation" },
         { name: t.nav.programs, href: "/programs" },
         { name: t.nav.gallery, href: "/gallery" },
         { name: t.nav.contact, href: "/contact" },
@@ -71,15 +83,15 @@ export function Navbar() {
                                 alt="Ankita Mahila Foundation Logo"
                                 fill
                                 sizes="48px"
-                                className="object-contain drop-shadow-md"
+                                className="object-contain drop-shadow-md brightness-100 dark:brightness-110"
                                 priority
                             />
                         </motion.div>
                         <div className="flex flex-col justify-center">
-                            <span className="text-xl font-black tracking-tighter text-brand-magenta leading-none sm:text-2xl text-glow">
+                            <span className="text-xl font-black tracking-tighter text-brand-magenta dark:text-brand-magenta/90 leading-none sm:text-2xl text-glow">
                                 Ankita Mahila
                             </span>
-                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-gold leading-none mt-1">
+                            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-gold dark:text-brand-gold/90 leading-none mt-1">
                                 Foundation
                             </span>
                         </div>
@@ -107,6 +119,8 @@ export function Navbar() {
                                 )}
                             </Link>
                         ))}
+
+                        <div className="h-4 w-px bg-border mx-2" />
 
                         {/* Language Switcher */}
                         <div className="relative">
@@ -147,6 +161,8 @@ export function Navbar() {
                             </AnimatePresence>
                         </div>
 
+                        <ThemeToggle />
+
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                             <Button className="bg-brand-magenta hover:bg-brand-magenta/90 text-white rounded-full px-6 shadow-md shadow-brand-magenta/20 transition-all active:scale-95">
                                 {t.nav.join}
@@ -156,6 +172,7 @@ export function Navbar() {
 
                     {/* Mobile Menu Toggle */}
                     <div className="flex items-center space-x-4 lg:hidden">
+                        <ThemeToggle className="h-9 w-9" />
                         {/* Mobile Language cycles */}
                         <button
                             onClick={() => {
