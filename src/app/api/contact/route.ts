@@ -13,15 +13,38 @@ export async function POST(request: Request) {
       );
     }
 
+    // SMTP Configuration validation
+    const smtpHost = process.env.SMTP_HOST;
+    const smtpPort = Number(process.env.SMTP_PORT) || 587;
+    const smtpUser = process.env.SMTP_USER;
+    const smtpPass = process.env.SMTP_PASS;
+
+    console.log('SMTP Config Check:', {
+      host: smtpHost,
+      port: smtpPort,
+      user: smtpUser ? 'Set' : 'Missing',
+      pass: smtpPass ? 'Set' : 'Missing',
+    });
+
+    if (!smtpHost) {
+      console.error('SMTP_HOST is not defined in environment variables');
+      return NextResponse.json(
+        { error: 'Server configuration error: SMTP host is missing' },
+        { status: 500 }
+      );
+    }
+
     // Configure Nodemailer transporter
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: process.env.SMTP_PORT === '465', // true for 465, false for other ports
+      host: smtpHost,
+      port: smtpPort,
+      secure: smtpPort === 465, // true for 465, false for other ports
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
+        user: smtpUser,
+        pass: smtpPass,
       },
+      // Increase timeout and add more debug info if needed
+      connectionTimeout: 10000, 
     });
 
     // Send email
