@@ -119,7 +119,7 @@ export default function ContactPage() {
                                             </div>
                                             <div>
                                                 <h4 className="font-black text-xl mb-1">{t.contactPage.emailTitle}</h4>
-                                                <p className="text-foreground/70 text-lg font-medium leading-relaxed">contact@ankitamahilafoundation.com<br />support@ankitamahilafoundation.com</p>
+                                                <p className="text-foreground/70 text-lg font-medium leading-relaxed">support@ankitamahilafoundation.com</p>
                                             </div>
                                         </div>
                                     </div>
