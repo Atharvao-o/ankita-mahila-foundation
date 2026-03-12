@@ -3,10 +3,10 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
-    const { name, email, subject, message } = await request.json();
+    const { name, email, phone, subject, message } = await request.json();
 
     // Basic validation
-    if (!name || !email || !subject || !message) {
+    if (!name || !email || !phone || !subject || !message) {
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
@@ -58,6 +58,7 @@ export async function POST(request: Request) {
           <h2 style="color: #c026d3;">New Feedback Received</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
           <p><strong>Subject:</strong> ${subject}</p>
           <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;" />
           <p><strong>Message:</strong></p>

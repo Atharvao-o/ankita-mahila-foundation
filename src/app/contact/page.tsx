@@ -3,10 +3,11 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Send, Instagram, Facebook, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Mail, Phone, MapPin, Send, Instagram, Facebook, CheckCircle2, AlertCircle, Loader2, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLocale } from "@/context/LocaleContext";
+import { cn } from "@/lib/utils";
 
 export default function ContactPage() {
     const { t } = useLocale();
@@ -16,6 +17,7 @@ export default function ContactPage() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        phone: "",
         subject: t.contactPage.subjects[0],
         message: ""
     });
@@ -41,7 +43,7 @@ export default function ContactPage() {
             }
 
             setSubmitted(true);
-            setFormData({ name: "", email: "", subject: t.contactPage.subjects[0], message: "" });
+            setFormData({ name: "", email: "", phone: "", subject: t.contactPage.subjects[0], message: "" });
         } catch (err: any) {
             console.error('Submission error:', err);
             setError(err.message || 'Failed to send message. Please try again.');
@@ -135,6 +137,29 @@ export default function ContactPage() {
                                         ))}
                                     </div>
                                 </div>
+
+                                {/* WhatsApp Section */}
+                                <div className="bg-brand-green/10 p-8 rounded-[40px] border border-brand-green/20 space-y-6">
+                                    <div className="flex items-center gap-4">
+                                        <div className="bg-brand-green text-white p-3 rounded-2xl">
+                                            <MessageCircle className="h-6 w-6" />
+                                        </div>
+                                        <h3 className="text-2xl font-black tracking-tight text-brand-green">{t.contactPage.whatsappTitle}</h3>
+                                    </div>
+                                    <p className="text-foreground/70 font-medium">{t.contactPage.whatsappDesc}</p>
+                                    <a
+                                        href="https://wa.me/918169672600?text=Hello!%20I%20have%20an%20inquiry%20about%20Ankita%20Mahila%20Foundation."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={cn(
+                                            buttonVariants({ variant: "default" }),
+                                            "w-full bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-2xl h-16 text-lg font-black shadow-lg shadow-green-500/20 transition-all hover:scale-105 active:scale-95 flex items-center justify-center border-none"
+                                        )}
+                                    >
+                                        <MessageCircle className="mr-2 h-5 w-5" />
+                                        {t.contactPage.whatsappBtn}
+                                    </a>
+                                </div>
                             </motion.div>
 
                             {/* Contact Form */}
@@ -147,7 +172,7 @@ export default function ContactPage() {
                                 <div className="bg-zinc-50 rounded-[60px] p-10 md:p-16 border border-brand-gold/10 shadow-2xl relative overflow-hidden group">
                                     <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 h-64 w-64 rounded-full bg-brand-gold/10 blur-3xl opacity-50" />
                                     <h2 className="text-4xl font-black mb-10 text-brand-magenta tracking-tight relative z-10">{t.contactPage.formTitle}</h2>
-                                    
+
                                     <AnimatePresence mode="wait">
                                         {submitted ? (
                                             <motion.div
@@ -163,7 +188,7 @@ export default function ContactPage() {
                                                     <h3 className="text-2xl font-black text-brand-green">Message Sent Successfully!</h3>
                                                     <p className="text-foreground/60 font-medium">Thank you for reaching out. We will get back to you soon.</p>
                                                 </div>
-                                                <Button 
+                                                <Button
                                                     onClick={() => setSubmitted(false)}
                                                     variant="outline"
                                                     className="rounded-full px-10 border-brand-green text-brand-green hover:bg-brand-green hover:text-white"
@@ -176,62 +201,76 @@ export default function ContactPage() {
                                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                                     <div className="space-y-3">
                                                         <label className="text-sm font-black uppercase tracking-[0.2em] text-foreground/40 ml-2">{t.contactPage.nameLabel}</label>
-                                                        <input 
-                                                            type="text" 
+                                                        <input
+                                                            type="text"
                                                             name="name"
                                                             required
                                                             value={formData.name}
                                                             onChange={handleChange}
-                                                            placeholder="Anjali Gupta" 
-                                                            className="w-full rounded-2xl border-2 border-brand-gold/10 bg-white px-8 py-5 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 font-medium text-lg placeholder:text-foreground/20" 
+                                                            placeholder="Anjali Gupta"
+                                                            className="w-full rounded-2xl border-2 border-brand-gold/10 bg-white px-8 py-5 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 font-medium text-lg placeholder:text-foreground/20"
                                                         />
                                                     </div>
                                                     <div className="space-y-3">
                                                         <label className="text-sm font-black uppercase tracking-[0.2em] text-foreground/40 ml-2">{t.contactPage.emailLabel}</label>
-                                                        <input 
-                                                            type="email" 
+                                                        <input
+                                                            type="email"
                                                             name="email"
                                                             required
                                                             value={formData.email}
                                                             onChange={handleChange}
-                                                            placeholder="anjali@example.com" 
-                                                            className="w-full rounded-2xl border-2 border-brand-gold/10 bg-white px-8 py-5 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 font-medium text-lg placeholder:text-foreground/20" 
+                                                            placeholder="anjali@example.com"
+                                                            className="w-full rounded-2xl border-2 border-brand-gold/10 bg-white px-8 py-5 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 font-medium text-lg placeholder:text-foreground/20"
                                                         />
                                                     </div>
                                                 </div>
-                                                <div className="space-y-3">
-                                                    <label className="text-sm font-black uppercase tracking-[0.2em] text-foreground/40 ml-2">{t.contactPage.subjectLabel}</label>
-                                                    <div className="relative">
-                                                        <select 
-                                                            name="subject"
-                                                            value={formData.subject}
+                                                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                    <div className="space-y-3">
+                                                        <label className="text-sm font-black uppercase tracking-[0.2em] text-foreground/40 ml-2">{t.contactPage.phoneLabel}</label>
+                                                        <input
+                                                            type="tel"
+                                                            name="phone"
+                                                            required
+                                                            value={formData.phone}
                                                             onChange={handleChange}
-                                                            className="w-full rounded-2xl border-2 border-brand-gold/10 bg-white px-8 py-5 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 appearance-none font-bold text-lg text-foreground/70"
-                                                        >
-                                                            {t.contactPage.subjects.map((s: string) => (
-                                                                <option key={s}>{s}</option>
-                                                            ))}
-                                                        </select>
-                                                        <div className="absolute right-8 top-1/2 -translate-y-1/2 pointer-events-none">
-                                                            <div className="h-2 w-2 border-b-2 border-right-2 border-brand-magenta rotate-45" />
+                                                            placeholder="+91 99999 99999"
+                                                            className="w-full rounded-2xl border-2 border-brand-gold/10 bg-white px-8 py-5 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 font-medium text-lg placeholder:text-foreground/20"
+                                                        />
+                                                    </div>
+                                                    <div className="space-y-3">
+                                                        <label className="text-sm font-black uppercase tracking-[0.2em] text-foreground/40 ml-2">{t.contactPage.subjectLabel}</label>
+                                                        <div className="relative">
+                                                            <select
+                                                                name="subject"
+                                                                value={formData.subject}
+                                                                onChange={handleChange}
+                                                                className="w-full rounded-2xl border-2 border-brand-gold/10 bg-white px-8 py-5 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 appearance-none font-bold text-lg text-foreground/70"
+                                                            >
+                                                                {t.contactPage.subjects.map((s: string) => (
+                                                                    <option key={s}>{s}</option>
+                                                                ))}
+                                                            </select>
+                                                            <div className="absolute right-8 top-1/2 -translate-y-1/2 pointer-events-none">
+                                                                <div className="h-2 w-2 border-b-2 border-right-2 border-brand-magenta rotate-45" />
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="space-y-3">
                                                     <label className="text-sm font-black uppercase tracking-[0.2em] text-foreground/40 ml-2">{t.contactPage.messageLabel}</label>
-                                                    <textarea 
+                                                    <textarea
                                                         name="message"
                                                         required
                                                         value={formData.message}
                                                         onChange={handleChange}
-                                                        placeholder="Tell us about your business or inquiry..." 
-                                                        rows={5} 
-                                                        className="w-full rounded-[30px] border-2 border-brand-gold/10 bg-white px-8 py-6 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 resize-none font-medium text-lg placeholder:text-foreground/20" 
+                                                        placeholder="Tell us about your business or inquiry..."
+                                                        rows={5}
+                                                        className="w-full rounded-[30px] border-2 border-brand-gold/10 bg-white px-8 py-6 focus:border-brand-magenta outline-none transition-all shadow-lg shadow-black/5 resize-none font-medium text-lg placeholder:text-foreground/20"
                                                     />
                                                 </div>
 
                                                 {error && (
-                                                    <motion.div 
+                                                    <motion.div
                                                         initial={{ opacity: 0, y: -10 }}
                                                         animate={{ opacity: 1, y: 0 }}
                                                         className="flex items-center gap-3 text-red-500 bg-red-50 p-4 rounded-2xl border border-red-100 font-medium"
@@ -241,7 +280,7 @@ export default function ContactPage() {
                                                     </motion.div>
                                                 )}
 
-                                                <Button 
+                                                <Button
                                                     type="submit"
                                                     disabled={isSubmitting}
                                                     className="w-full md:w-auto bg-brand-magenta hover:bg-brand-magenta/90 text-white rounded-full px-16 h-20 text-xl font-black shadow-2xl shadow-brand-magenta/30 transition-all hover:scale-105 active:scale-95 group/btn disabled:opacity-70 disabled:scale-100"
@@ -270,6 +309,26 @@ export default function ContactPage() {
                 </section>
             </main>
             <Footer />
+
+            {/* Floating WhatsApp Button */}
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="fixed bottom-8 right-8 z-50"
+            >
+                <a
+                    href="https://wa.me/918169672600?text=Hello!%20I%20have%20an%20inquiry%20about%20Ankita%20Mahila%20Foundation."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Chat on WhatsApp"
+                    className={cn(
+                        buttonVariants({ variant: "default" }),
+                        "h-16 w-16 md:h-20 md:w-20 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white shadow-2xl shadow-green-500/40 p-0 hover:scale-110 transition-transform active:scale-95 flex items-center justify-center border-none"
+                    )}
+                >
+                    <MessageCircle className="h-8 w-8 md:h-10 md:w-10" />
+                </a>
+            </motion.div>
         </div>
     );
 }

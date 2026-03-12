@@ -135,6 +135,7 @@ export const translations = {
             formTitle: "Send us a Message",
             nameLabel: "Full Name",
             emailLabel: "Email Address",
+            phoneLabel: "Phone Number",
             subjectLabel: "Subject",
             messageLabel: "Your Message",
             sendBtn: "Send Message",
@@ -144,6 +145,9 @@ export const translations = {
                 "Partnership Proposal",
                 "General Support"
             ],
+            whatsappTitle: "Message on WhatsApp",
+            whatsappDesc: "Prefer direct messaging? Reach out to us on WhatsApp for a quick response.",
+            whatsappBtn: "Chat on WhatsApp",
             underDevelopment: "Website Under Development - Coming Soon",
         }
     },
@@ -283,6 +287,7 @@ export const translations = {
             formTitle: "हमें संदेश भेजें",
             nameLabel: "पूरा नाम",
             emailLabel: "ईमेल पता",
+            phoneLabel: "फ़ोन नंबर",
             subjectLabel: "विषय",
             messageLabel: "आपका संदेश",
             sendBtn: "संदेश भेजें",
@@ -292,6 +297,9 @@ export const translations = {
                 "साझेदारी प्रस्ताव",
                 "सामान्य सहायता"
             ],
+            whatsappTitle: "व्हाट्सएप पर संदेश भेजें",
+            whatsappDesc: "सीधे मैसेजिंग पसंद करते हैं? त्वरित प्रतिक्रिया के लिए व्हाट्सएप पर हमसे संपर्क करें।",
+            whatsappBtn: "व्हाट्सएप पर चैट करें",
             underDevelopment: "वेबसाइट विकास के अधीन है - जल्द ही आ रही है",
         }
     },
@@ -431,6 +439,7 @@ export const translations = {
             formTitle: "आम्हाला संदेश पाठवा",
             nameLabel: "पूर्ण नाव",
             emailLabel: "ईमेल पत्ता",
+            phoneLabel: "फोन नंबर",
             subjectLabel: "विषय",
             messageLabel: "तुमचा संदेश",
             sendBtn: "संदेश पाठवा",
@@ -440,6 +449,9 @@ export const translations = {
                 "भागीदारी प्रस्ताव",
                 "सामान्य समर्थन"
             ],
+            whatsappTitle: "व्हॉट्सॲपवर संदेश पाठवा",
+            whatsappDesc: "थेट मेसेजिंगला प्राधान्य देता? त्वरित प्रतिसादासाठी व्हॉट्सॲपवर आमच्याशी संपर्क साधा।",
+            whatsappBtn: "व्हॉट्सॲपवर चॅट करा",
             underDevelopment: "वेबसाइट विकसित होत आहे - लवकरच येत आहे",
         }
     },
